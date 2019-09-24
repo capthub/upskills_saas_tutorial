@@ -10,11 +10,11 @@
 
   <body>
   <ul class="nav nav-pills">
-    <%= link_to "/", class:"navbar-brand" do %>
+    <%= link_to root_path, class:"navbar-brand" do %>
     <i class="fa fa-laptop"></i>
     First Website
     <% end %>
-    <li><%= link_to "About", "/about"%></li>
+    <li><%= link_to "About", about_path %></li>
 
   </ul>
     <%= yield %>
