@@ -24,7 +24,7 @@ h1, h2, h3 {font-family: 'Open Sans', sans-serif;}
 
 // Background Style
 
-.nav, .home-callout {
+.navbar, .home-callout {
  //fron IUgradients.com//
 color:white;
 background: #36D1DC;  /* fallback for old browsers */
@@ -40,10 +40,27 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
 
 // Homepage styles
 
-.navbar-brand, .nav-pills li a {
+.navbar-default .navbar-toggle .icon-bar {
+ background-color:white
+}
+
+.navbar-default .navbar-toggle {
+ border:2px solid white;
+ &:hover, &:focus{
+  background-color:#36D1DC;
+  }
+ }
+ 
+ 
+.navbar{
+ border:none;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav li a  {
  color:white;
+ font-weight:500;
  &:hover{
- opacity:0.7; 
+ opacity:0.8; 
  }
 }
 
