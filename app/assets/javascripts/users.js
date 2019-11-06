@@ -2,14 +2,14 @@
 //Document ready
 $(document).on('turbolinks:load', function(){
     var theForm = $('#pro_form');
-    var submitBtn = $('#form_submit_btn');
+    var submitBtn = $('#form-signup-btn');
     //Set Stripe public key
     Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content'));
     //When user clicks submit 
     submitBtn.click(function(event){
     //Prevent form submission 
         event.preventDefault();
-        submitBtn.val.("Processing").prop('disabled', true);
+        submitBtn.val("Processing").prop('disabled', true);
     //Collect card fields
     
     var ccNum = $('#card_number').val(),
