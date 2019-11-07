@@ -69,8 +69,16 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
  font-weight:800;
 }
 
-.alert-notice {
- display:none;
+.flash-container {
+ position:absolute;
+ width: 100%;
+}
+
+.alert-notice, .alert-alert {
+ text-align:center;
+ background:rgba(255, 255, 255, 0.3);
+ border-color:rgba(255, 255, 255, 0.5);
+ margin-top: -14px;
 }
 
 .home-signup-links{
