@@ -26,6 +26,24 @@ class ProfilesController < ApplicationController
         @profile = @user.profile
     end
     
+    #PUT to /users/:user_id/profile
+    def update
+        #Retrieve the user from the database
+        @user =User.find(params[:user_id])
+        #Retrieve that user's profile
+        @profile = @user.profile
+        #Mass assign edited profile attributes and save
+        if @profile.update_attributes(profile_params)
+            flash[:success]= "Profile has been updated!"
+        #Rediredt user to their profile page
+        redirect_to user_path(params[:user_id])
+        else
+            render action :edit
+        end
+    end
+    
+    
+    
     private
     
     def profile_params
