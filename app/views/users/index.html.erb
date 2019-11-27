@@ -9,10 +9,12 @@
                     <li>
                         <div class="well row <%=cycle('white-bg','')%>">
                             <div class="col-sm-4 text-center">
-                                <% if user.profile.avatar %>
+                                <% if user.profile.avatar? %>
                                     <%=link_to user do%>
                                         <%= image_tag user.profile.avatar.url, class:'user-index-avatar'%>
                                     <%end%>
+                                <% else %>
+                                <%= image_tag "avatar.png", class:'user-index-avatar'%>
                                 <%end%>
                             </div>
                             <div>

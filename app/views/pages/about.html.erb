@@ -4,13 +4,34 @@
             <h1>About This Project</h1>
             <p>This is my first attempt at building a website as a part of The Essential Web Developer Course at Upskill.com </p>
             The course consists of 200 lessons covering a wide range of web development aspects.</br>
-            <h2>About the instructor</h2></br>
+            <h2>About the instructor</h2>
             Professional Web Developer Rob Dey has great experince with full-stack (front/back-end) development.
             He has built websites for major companies and brands including Coca-Cola, Toyota, First Data, Bennigan's and more.</br>
             <%= image_tag "rob.jpg", class:'Images'%>
             <h2>Content covered</h2>
-            This course begins with a deep dive into full-stack web development and learning about how apps work. It teaches basic principles of HTML and 
-            CSS3 and efficient software development principles in order to implement those from the very start.  
+            This course begins with a deep dive into full-stack web development and learning about how apps work. It teaches basic principles of HTML, 
+            CSS and Ruby, as well as efficient software development principles in order to implement those from the very start. It then shows how to use existing 
+            software packages (gems) to add functionality to the Ruby application. During this course I've learned about HTTP request methods which helped me understand its significance in web development. 
+            I have also learned how to build view, controller and model files and how to link them together to enable users to navigate through individual web pages and forms.</br>
+            <div class="img-input">
+            <%= image_tag "languages.JPG", class:'number'%>
+            </div>
+            <h2>Some of the features added include:</h2></br>
+            <div class = "col-md-6 col-md-offset-3">
+                <div class="list-group-item home-description left">Twitter bootstrap for interface components</div>
+                <div class="list-group-item home-description left">Font-awesome for adding icons</div>
+                <div class="list-group-item home-description left">Devise gem for user authentication</div>
+                <div class="list-group-item home-description left">Stripe for payment processing</div>
+                <div class="list-group-item home-description right">Paperclip gem for image upload</div>
+                <div class="list-group-item home-description right">Sqlite3 and PostgreSQL as the database</div>
+                <div class="list-group-item home-description right">Jquery as the JavaScript library</div>
+                <div class="list-group-item home-description right">MailGun for contact form email notifications</div>
+            </div>
+            <div class="plain-text">
+            Feel free to explore and play with this website. Create and edit your profile, explore Premium features and view other users! If you have any questions or would like to leave
+            feedback, please use the <%= link_to "contact form", new_contact_path %>.
+            </div>
         </div>
     </div>
+    Last Modified: 27/11/2019
 </div>
