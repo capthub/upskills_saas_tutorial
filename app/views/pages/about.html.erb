@@ -16,21 +16,35 @@
             <div class="img-input">
             <%= image_tag "languages.JPG", class:'number'%>
             </div>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
             <h2>Some of the features added include:</h2></br>
-            <div class = "col-md-6 col-md-offset-3">
-                <div class="list-group-item home-description left">Twitter bootstrap for interface components</div>
-                <div class="list-group-item home-description left">Font-awesome for adding icons <i class="fa fa-diamond"></i></div>
-                <div class="list-group-item home-description left">Devise gem for user authentication</div>
-                <div class="list-group-item home-description left ">Stripe for payment and subscription management</div>
-                <div class="list-group-item home-description right">Paperclip gem for image processing</div>
-                <div class="list-group-item home-description right">Sqlite3 and PostgreSQL as the database</div>
-                <div class="list-group-item home-description right">Jquery and Turbolinks for effects and optimisation</div>
-                <div class="list-group-item home-description right">MailGun for contact form email notifications</div>
+            <div class="justify-content-center">
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <tr>
+                            <td class="padded">Twitter bootstrap for interface components </td>
+                            <td>Font-awesome for adding icons <i class="fa fa-diamond"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="padded">Devise gem for user authentication </td>
+                            <td>Stripe for payment and subscription management </td>
+                        </tr>
+                        <tr>
+                            <td class="padded">Paperclip gem for image processing </td>
+                            <td>Sqlite3 and PostgreSQL as the database </td>
+                        </tr>                
+                        <tr>
+                            <td class="padded">Jquery and Turbolinks for effects and optimisation </td>
+                            <td>MailGun for contact form email notifications </td>
+                        </tr>                 
+                    </table>
+                </div>
             </div>
-            <div class="plain-text">
+        </div>
+        <div class="plain-text col-md-10 col-md-offset-1">
             Feel free to explore and play with this website. Create and edit your profile, explore Premium features and view other users! If you have any questions or would like to leave
             feedback, please use the <%= link_to "contact form", new_contact_path %>.
-            </div>
         </div>
     </div>
     Last Modified: 27/11/2019

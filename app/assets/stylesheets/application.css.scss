@@ -104,7 +104,6 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
  float:right;
 }
 .plain-text{
- width:100%;
  clear:both;
  padding-top:30px;
  padding-bottom:30px;
@@ -122,4 +121,16 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
 }
 .testy{
  padding-top:18px;
+}
+.table{
+ width:100%;
+ border-collapse:collapse;
+ margin:0 auto;
+}
+.padded{
+ padding:8px;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
 }
